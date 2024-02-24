@@ -1,0 +1,39 @@
+# def is_prime(number):
+#     if number <= 1:
+#         return False
+#     for i in range(2, int(number ** 0.5) + 1):
+#         if number % i == 0:
+#             return False
+#     return True
+#
+#
+# print(is_prime(15))
+import re
+
+
+# a = 4.5
+# b = 2
+# print (a//b)
+
+
+# def remove_punctuation_regex(text):
+#     # Define regular expression pattern to match punctuation
+#     punctuation_pattern = re.compile(r'[^\w\s]')
+#     # Use sub() method to replace punctuation with an empty string
+#     return punctuation_pattern.sub('', text)
+
+
+#
+#
+# # Example usage
+# text_with_punctuation = "Hello, world! How are you?"
+# text_without_punctuation = remove_punctuation_regex(text_with_punctuation)
+# print(text_without_punctuation)
+
+def RemovePunc(text):
+    punc_func = re.compile('[^\w\s]')
+    return punc_func.sub('', text)
+
+
+sample_text = 'here is a sample, are you ready?'
+print(RemovePunc(sample_text))

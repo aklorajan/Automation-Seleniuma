@@ -1,22 +1,17 @@
-# import os.path
-#
-# from selenium import webdriver
-# from selenium.webdriver.firefox.service import Service as FirefoxService
-# from webdriver_manager.firefox import GeckoDriverManager
-# from selenium.webdriver.common.by import By
-# from time import sleep
-# from pathlib import Path
-# from selenium.webdriver.firefox.options import Options
+import os.path
 
+from selenium import webdriver
+from selenium.webdriver.firefox.service import Service as FirefoxService
+from webdriver_manager.firefox import GeckoDriverManager
+from selenium.webdriver.common.by import By
+from time import sleep
+from pathlib import Path
+from selenium.webdriver.firefox.options import Options
 
+options = webdriver.ChromeOptions()
+options.add_experimental_option("detach", True)
+driver = webdriver.Chrome(options=options)
 
-# options = webdriver.ChromeOptions()
-# options.add_experimental_option("detach", True)
-# driver = webdriver.Chrome(options=options)
-
-# options = webdriver.ChromeOptions()
-# options.add_experimental_option("detach", True)
-# driver = webdriver.Chrome(options=options)
 # # firefoxOption = Options()
 # # firefoxOption.add_argument("--headless")
 # # driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))

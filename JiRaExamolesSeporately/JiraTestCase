@@ -1,0 +1,11 @@
+This test case verifies the user registration process on the website.
+
+Steps:
+1. Navigate to the registration page.
+2. Enter valid username, email, password, and confirm password.
+3. Click on the submit button.
+
+Expected Results:
+1. The registration page should be displayed.
+2. User credentials should be entered successfully without errors.
+3. User should be successfully registered and redirected to the homepage.

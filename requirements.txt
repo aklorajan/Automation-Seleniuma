@@ -1,3 +1,4 @@
 selenium~=4.11.2
 webdriver-manager
 mysql~=0.0.3
+jira~=3.6.0

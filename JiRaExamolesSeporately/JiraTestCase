@@ -9,3 +9,17 @@ Expected Results:
 1. The registration page should be displayed.
 2. User credentials should be entered successfully without errors.
 3. User should be successfully registered and redirected to the homepage.
+
+username = 'mm' or 1 = 1'
+password = 'oo' or 1 = 1'
+
+select *
+from user
+where username = 'mm' or 1 = 1
+    and password = 'oo' or 1 = 1
+
+
+select *
+from user
+where username = 'mm'
+    and password = 'ss'
